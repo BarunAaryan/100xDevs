@@ -3,6 +3,7 @@ import {useRouter} from "next/navigation";
 import axios from "axios";
 import { ChangeEventHandler, useState } from "react";
 
+
 export function Signup() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -32,7 +33,9 @@ export function Signup() {
                             username,
                             password
                             });
-                            //when user signup send them to landing page
+                            // when user signup send them to landing page
+                            //server actions 
+                            // signup(email, password);
 router.push("/")
                         }}
                          type="button" className="mt-8 w-full text-white bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Sign in</button>
